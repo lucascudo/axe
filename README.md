@@ -1,1 +1,1 @@
-Repositório de cultura nagô.
+Repositório de cultura yorubá/nagô.
