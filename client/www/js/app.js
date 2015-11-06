@@ -49,6 +49,7 @@ angular.module('starter', [
   
   .state('message', {
     url: '/message',
+	cache: false,
 	controller: 'MessageCtrl',
 	templateUrl: 'templates/message.html'
   })
