@@ -6,7 +6,8 @@
 angular.module('starter', [
 	'ionic',
 	'ionic-material',
-	'starter.controllers'
+	'starter.controllers',
+	'starter.factories'
 ])
 
 .run(function($ionicPlatform, $rootScope) {

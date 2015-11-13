@@ -1,11 +1,11 @@
 <ion-view title="Iorubá Cotidiano">
-	<ion-list class="animate-ripple">
-	    <ion-item nav-clear class="item-icon-right">
-	        <h2>Cadeira</h2>
+	<ion-list> <!-- TODO: checar compatibilidade entre ng-repeat e class="animate-ripple" -->
+	    <ion-item nav-clear class="item-icon-right" ng-repeat="word in dictionary">
+	        <h2>{{ word.portuguese }} -> {{ word.yoruba }}</h2>
 	        <i class="icon ion-plus-round muted"></i>
 	    </ion-item>
-	    <ion-item nav-clear menu-close class="item-icon-right">
-	        <h2>Colher</h2>
+		<ion-item nav-clear menu-close class="item-icon-right">
+	        <h2>Ícone alternativo</h2>
 	        <i class="icon ion-plus-circled muted"></i>
 	    </ion-item>
 	</ion-list>

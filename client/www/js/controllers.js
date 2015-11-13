@@ -1,12 +1,13 @@
-angular.module('starter.controllers', ['ionic', 'ionic-material'])
+angular.module('starter.controllers', [])
 
 .controller('HomeCtrl', function($rootScope) {
 	$rootScope.themeColor = "positive";
 })
 
-.controller('DictionaryCtrl', function($rootScope, ionicMaterialInk, ionicMaterialMotion, $ionicSideMenuDelegate, $timeout) {
+.controller('DictionaryCtrl', function($rootScope, $scope, ionicMaterialMotion, DictionaryFactory) {
 	$rootScope.themeColor = "assertive";
 	ionicMaterialMotion.ripple();
+	$scope.dictionary = DictionaryFactory.getDictionary();
 })
 
 .controller('MessageCtrl', function($rootScope) {
