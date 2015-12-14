@@ -1,12 +1,19 @@
-<ion-view title="Iorubá Cotidiano">
-	<ion-list> <!-- TODO: checar compatibilidade entre ng-repeat e class="animate-ripple" -->
-	    <ion-item nav-clear class="item-icon-right" ng-repeat="word in dictionary">
-	        <h2>{{ word.portuguese }} -> {{ word.yoruba }}</h2>
-	        <i class="icon ion-plus-round muted"></i>
-	    </ion-item>
-		<ion-item nav-clear menu-close class="item-icon-right">
-	        <h2>Ícone alternativo</h2>
-	        <i class="icon ion-plus-circled muted"></i>
-	    </ion-item>
-	</ion-list>
+<ion-view title="Yorubá no corpo">
+	<ion-list>
+        <div ng-repeat="word in dictionary">
+          <ion-item class="item-stable"
+                    ng-click="toggleGroup(word)"
+                    ng-class="{active: isGroupShown(word)}">
+              <i class="icon" ng-class="isGroupShown(word) ? 'ion-minus' : 'ion-plus'"></i> {{word.portuguese}}
+          </ion-item>
+          <ion-item class="item-accordion" ng-show="isGroupShown(word)">
+          	{{word.yoruba}}
+          </ion-item>
+          <ion-item class="item-accordion"
+          	ng-repeat="description in word.description"
+          	ng-show="isGroupShown(word)">
+          	{{description}}
+          </ion-item>
+        </div>
+      </ion-list>
 </ion-view>

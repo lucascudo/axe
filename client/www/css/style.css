@@ -1,1 +1,37 @@
 /* Empty. Add your own CSS if you like */
+/*
+ * http://docs.angularjs.org/api/ng/directive/ngShow#usage_animations
+ */
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+.exu {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3232+0,ff7c7c+0,ff2828+50,000000+52,3e3f31+100 */
+	background: #ff3232; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #ff3232 0%, #ff7c7c 0%, #ff2828 50%, #000000 52%, #3e3f31 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #ff3232 0%,#ff7c7c 0%,#ff2828 50%,#000000 52%,#3e3f31 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #ff3232 0%,#ff7c7c 0%,#ff2828 50%,#000000 52%,#3e3f31 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#3e3f31',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	color: white;
+}
+
+.oxumare {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3232+0,33cd5f+0,28a54c+50,e6b400+52,ffc900+100 */
+	background: #ff3232; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #ff3232 0%, #33cd5f 0%, #28a54c 50%, #e6b400 52%, #ffc900 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #ff3232 0%,#33cd5f 0%,#28a54c 50%,#e6b400 52%,#ffc900 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #ff3232 0%,#33cd5f 0%,#28a54c 50%,#e6b400 52%,#ffc900 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#ffc900',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	color: white;
+}
