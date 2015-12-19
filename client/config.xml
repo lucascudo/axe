@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="br.com.sisau.axe" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="br.com.sisau.axe" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Axé</name>
   <description>
-        Repositório de cultura nagô.
+        Repositório de cultura Yorubá/Nagô.
   </description>
   <author email="lucas.sisau@gmail.com" href="http://lucas.redeaberta.com.br/">
       Cascudo
