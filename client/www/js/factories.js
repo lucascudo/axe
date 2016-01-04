@@ -36,17 +36,17 @@ angular.module("starter.factories", [])
     {
       text: 'Livre é aquele que...',
       author: 'Mãe Stella',
-      filename: 'AUD-20151227-WA0005.3ga'
+      filename: 'AUD-20151227-WA0005.mp3'
     },
     {
       text: 'Já possuímos mensagens personalizadas 2 =)',
       author: 'ROCHA, Lucas T.',
-      filename: 'AUD-20151227-WA0009.3ga'
+      filename: 'AUD-20151227-WA0009.mp3'
     },
     {
       text: 'Já possuímos mensagens personalizadas 3 =)',
       author: 'ROCHA, Lucas T.',
-      filename: 'AUD-20151227-WA0010.3ga'
+      filename: 'AUD-20151227-WA0010.mp3'
     }
   ].sort(function () {
     return (Math.round(Math.random())-0.5);
