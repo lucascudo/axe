@@ -1,8 +1,14 @@
 <ion-view title="Palavras de mãe Stella">
 	<ion-content class="padding">
 	    <div class="item item-text-wrap">
-	      <blockquote>"{{ message.text }}"</blockquote>
-		    <small>{{ message.author }}</small>
+			<blockquote>"{{ message.text }}"</blockquote>
+			<small>
+				<span class="my-player">
+					<i ng-click="media.play()" class="my-player-button ion-ios-play" my-player></i>
+					<i ng-click="media.pause()" class="my-player-button ion-ios-pause hide" my-player></i>
+				</span>
+				{{ message.author }}
+			</small>
 	    </div>
 	</ion-content>
 </ion-view>

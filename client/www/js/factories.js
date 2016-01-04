@@ -1,39 +1,56 @@
 angular.module("starter.factories", [])
 
 .factory("DictionaryFactory", function () {
-  return {
-		dictionary: [
-			{
-        yoruba: "Orí",
-        portuguese: "Cabeça",
-        description: [
-          "A palavra orí é usada para expressar tudo que é alto e destacado. O que demonstra a importância da cabeça para o povo yorubá.",
-          "Ó lóríkukun = Ele é cabeçudo (literalmente, a cabeça dele é teimosa)."
-        ]
-      },
-      {
-        yoruba: "Çnu",
-        portuguese: "Boca",
-        description: [
-          "A palavra çnu é usada para expressar abertura.",
-          "Çnu ya mi = Fiquei surpreso (literalmente, fiquei de boca aberta).",
-          "Çnu rê dùn = Ele é muito persuasivo (literalmente, a boca dele é doce)."
-        ]
-      },
-      {
-        yoruba: "Ojú",
-        portuguese: "Olhos, rosto",
-        description: [
-          "A palavra ojú é usada para expressar o lugar onde as coisas acontecem, a parte principal de algum lugar: Ojúbô = Local principal de culto (ìbô).",
-          "Ojú rê bájé = Ele está carrancudo (literalmente, o rosto dele se estragou).",
-          "Ó fà ojú mi mö ra = Ela me deu boa impressão (literalmente, ela atraiu meus olhos ao dela)."
-        ]
-      }
-		],
-		getDictionary: function () {
-			return this.dictionary;
-		}
-  };
+  return [
+		{
+      yoruba: "Orí",
+      portuguese: "Cabeça",
+      description: [
+        "A palavra orí é usada para expressar tudo que é alto e destacado. O que demonstra a importância da cabeça para o povo yorubá.",
+        "Ó lóríkukun = Ele é cabeçudo (literalmente, a cabeça dele é teimosa)."
+      ]
+    },
+    {
+      yoruba: "Çnu",
+      portuguese: "Boca",
+      description: [
+        "A palavra çnu é usada para expressar abertura.",
+        "Çnu ya mi = Fiquei surpreso (literalmente, fiquei de boca aberta).",
+        "Çnu rê dùn = Ele é muito persuasivo (literalmente, a boca dele é doce)."
+      ]
+    },
+    {
+      yoruba: "Ojú",
+      portuguese: "Olhos, rosto",
+      description: [
+        "A palavra ojú é usada para expressar o lugar onde as coisas acontecem, a parte principal de algum lugar: Ojúbô = Local principal de culto (ìbô).",
+        "Ojú rê bájé = Ele está carrancudo (literalmente, o rosto dele se estragou).",
+        "Ó fà ojú mi mö ra = Ela me deu boa impressão (literalmente, ela atraiu meus olhos ao dela)."
+      ]
+    }
+	];
+})
+
+.factory('ḾessageFactory', function () {
+  return [
+    {
+      text: 'Livre é aquele que...',
+      author: 'Mãe Stella',
+      filename: 'AUD-20151227-WA0005.3ga'
+    },
+    {
+      text: 'Já possuímos mensagens personalizadas 2 =)',
+      author: 'ROCHA, Lucas T.',
+      filename: 'AUD-20151227-WA0009.3ga'
+    },
+    {
+      text: 'Já possuímos mensagens personalizadas 3 =)',
+      author: 'ROCHA, Lucas T.',
+      filename: 'AUD-20151227-WA0010.3ga'
+    }
+  ].sort(function () {
+    return (Math.round(Math.random())-0.5);
+  }).pop();
 })
 
 .factory('MediaSrv', function($q, $ionicPlatform, $window){

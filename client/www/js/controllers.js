@@ -16,16 +16,16 @@ angular.module('starter.controllers', [])
 	$scope.isGroupShown = function (group) {
 		return $scope.shownGroup === group;
 	};
-	$scope.dictionary = DictionaryFactory.getDictionary();
+	$scope.dictionary = DictionaryFactory;
 	ionicMaterialMotion.ripple();
 })
 
-.controller('MessageCtrl', function ($rootScope, $scope) {
+.controller('MessageCtrl', function ($rootScope, $scope, ḾessageFactory, MediaSrv) {
 	$rootScope.themeColor = "energized";
-	$scope.message = {
-        text: 'Ainda não possuímos mensagens personalizadas =(',
-        author: 'ROCHA, Lucas T.'
-    };
+	$scope.message = ḾessageFactory;
+	MediaSrv.loadMedia('audio/' + $scope.message.filename).then(function(media){
+		$scope.message.media = media;
+	});
 })
 
 .controller('PhilosophyCtrl', function ($rootScope) {
