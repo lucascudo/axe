@@ -3,24 +3,7 @@
  */
 
 /*
- * Accordion
- */
-.list .item.item-accordion {
-  line-height: 38px;
-  padding-top: 0;
-  padding-bottom: 0;
-  transition: 0.09s all linear;
-}
-.list .item.item-accordion.ng-hide {
-  line-height: 0px;
-}
-.list .item.item-accordion.ng-hide-add,
-.list .item.item-accordion.ng-hide-remove {
-  display: block !important;
-}
-
-/*
- * Gradient Colors
+ * Home
  */
 .exu {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3232+0,ff7c7c+0,ff2828+50,000000+52,3e3f31+100 */
@@ -42,8 +25,34 @@
 }
 
 /*
- * Player
+ * Dictionary
  */
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+/*
+ * Message
+ */
+
+#message-body {
+	background-color: #ADE1F9;
+}
+#message-body img {
+	border-bottom: 2em solid #015E99;
+	width: 100%;
+    height: auto;
+}
 .my-player-button {
 	font-size: 32px;
 }
