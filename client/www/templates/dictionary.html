@@ -1,19 +1,22 @@
 <ion-view title="Yorubá no corpo">
-	<ion-list>
-        <div ng-repeat="word in dictionary">
-          <ion-item class="item-stable"
-                    ng-click="toggleGroup(word)"
-                    ng-class="{active: isGroupShown(word)}">
-              <i class="icon" ng-class="isGroupShown(word) ? 'ion-minus' : 'ion-plus'"></i> {{word.portuguese}}
-          </ion-item>
-          <ion-item class="item-accordion" ng-show="isGroupShown(word)">
-          	{{word.yoruba}}
-          </ion-item>
-          <ion-item class="item-accordion"
-          	ng-repeat="description in word.description"
-          	ng-show="isGroupShown(word)">
-          	{{description}}
-          </ion-item>
-        </div>
-      </ion-list>
+  <ion-content id="message-body">
+    <img src="img/dictionary_fundo.jpg">
+  	<ion-list>
+      <div ng-repeat="word in dictionary">
+        <ion-item class="item"
+                  ng-click="toggleGroup(word)"
+                  ng-class="{active: isGroupShown(word)}">
+            <i class="icon" ng-class="isGroupShown(word) ? 'ion-minus' : 'ion-plus'"></i> {{word.portuguese}}
+        </ion-item>
+        <ion-item class="item-accordion" ng-show="isGroupShown(word)">
+        	{{word.yoruba}}
+        </ion-item>
+        <ion-item class="item-accordion"
+        	ng-repeat="description in word.description"
+        	ng-show="isGroupShown(word)">
+        	{{description}}
+        </ion-item>
+      </div>
+    </ion-list>
+  </ion-content>
 </ion-view>

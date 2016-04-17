@@ -5,6 +5,12 @@
 /*
  * Home
  */
+
+ .home-button {
+ 	background-color: #005696;
+ 	color: white;
+ 	font-weight: bold;
+ }
 .exu {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3232+0,ff7c7c+0,ff2828+50,000000+52,3e3f31+100 */
 	background: #ff3232; /* Old browsers */
