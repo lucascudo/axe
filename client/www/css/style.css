@@ -59,6 +59,24 @@
 	width: 100%;
     height: auto;
 }
-.my-player-button {
-	font-size: 32px;
+.hide {
+	display: none !important;
+}
+.round-button {
+	display: block;
+	margin: auto;
+    width: 92px;
+    height: 92px;
+    line-height: 50px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color: #f5f5f5;
+    text-align: center;
+    background: #005696;
+    box-shadow: 0 0 3px gray;
+    font-size: 88px;
+    font-weight: bold;
+}
+.round-button:hover {
+    opacity: 0.80;
 }
