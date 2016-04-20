@@ -3,15 +3,15 @@
     <img src="img/dictionary_fundo.jpg">
   	<ion-list>
       <div ng-repeat="word in dictionary">
-        <ion-item class="item"
+        <ion-item class="item item-text-wrap"
                   ng-click="toggleGroup(word)"
                   ng-class="{active: isGroupShown(word)}">
             <i class="icon" ng-class="isGroupShown(word) ? 'ion-minus' : 'ion-plus'"></i> {{word.portuguese}}
         </ion-item>
-        <ion-item class="item-accordion" ng-show="isGroupShown(word)">
+        <ion-item class="item-text-wrap item-accordion" ng-show="isGroupShown(word)">
         	{{word.yoruba}}
         </ion-item>
-        <ion-item class="item-accordion"
+        <ion-item class="item-text-wrap item-accordion"
         	ng-repeat="description in word.description"
         	ng-show="isGroupShown(word)">
         	{{description}}
