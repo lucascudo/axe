@@ -23,7 +23,10 @@ angular.module('starter.controllers', [])
 .controller('MessageCtrl', function ($rootScope, $scope, ḾessageFactory, MediaSrv) {
 	$rootScope.themeColor = "energized";
 	$scope.message = ḾessageFactory;
-	MediaSrv.loadMedia('audio/' + $scope.message.filename).then(function(media){
+	MediaSrv.loadMedia('audio/' + $scope.message.filename, null, null, function onStop() {
+		document.getElementById("btn-pause").classList.add("hide");
+		document.getElementById("btn-play").classList.remove("hide");
+	}).then(function(media){
 		$scope.message.media = media;
 	});
 })

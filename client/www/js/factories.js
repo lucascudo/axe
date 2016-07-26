@@ -33,9 +33,9 @@ angular.module("starter.factories", [])
 
 .factory('ḾessageFactory', function () {
   return [
-    { filename: 'AUD-20151227-WA0005.mp3' },
-    { filename: 'AUD-20151227-WA0009.mp3' },
-    { filename: 'AUD-20151227-WA0010.mp3' }
+    { filename: 'AUD-20151227-WA0005.mp3', description: 'AUD-20151227-WA0005' },
+    { filename: 'AUD-20151227-WA0009.mp3', description: 'AUD-20151227-WA0009' },
+    { filename: 'AUD-20151227-WA0010.mp3', description: 'AUD-20151227-WA0010' }
   ].sort(function () {
     return (Math.round(Math.random())-0.5);
   }).pop();

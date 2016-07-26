@@ -2,12 +2,13 @@
 	<ion-content id="message-body">
 		<img src="img/orientacoes_fundo.jpg">
 	    <div class="item-text-wrap">
-			<a ng-click="message.media.play()" class="my-player round-button" my-player>
+			<a ng-click="message.media.play()" id="btn-play" class="my-player round-button" my-player>
 				<i class="ion-android-volume-up"></i>
 			</a>
-			<a ng-click="message.media.pause()" class="my-player round-button hide" my-player>
+			<a ng-click="message.media.pause()" id="btn-pause" class="my-player round-button hide" my-player>
 				<i class="ion-android-volume-off"></i>
 			</a>
+      		<blockquote>{{ message.description }}</blockquote>
 	    </div>
 	</ion-content>
 </ion-view>
