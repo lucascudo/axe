@@ -31,6 +31,6 @@ angular.module('starter.controllers', [])
 	});
 })
 
-.controller('PhilosophyCtrl', function ($rootScope) {
+.controller('AboutCtrl', function ($rootScope) {
 	$rootScope.themeColor = "balanced";
 });

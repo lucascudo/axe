@@ -57,10 +57,10 @@ angular.module('starter', [
 	templateUrl: 'templates/message.html'
   })
   
-  .state('philosophy', {
-    url: '/philosophy',
-	controller: 'PhilosophyCtrl',
-	templateUrl: 'templates/philosophy.html'
+  .state('about', {
+    url: '/about',
+	controller: 'AboutCtrl',
+	templateUrl: 'templates/about.html'
   });
 
   // if none of the above states are matched, use this as the fallback
