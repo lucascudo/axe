@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="br.com.sisau.axe" version="0.3.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="br.com.sisau.axe" version="0.4.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
   <name>Orientações de Mãe Stella</name>
   <description>
         Repositório de cultura Yorubá/Nagô.
   </description>
   <author email="lucas.sisau@gmail.com" href="http://www.sisau.com.br/">
-      Lucas Teixeira Rocha (Cascudo)
+      Cascudo
   </author>
   <author email="contato@antonioladeia.com" href="http://www.antonioladeia.com/">
       Antonio Ladeia
   </author>
   <content src="index.html"/>
   <access origin="*"/>
-  <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+  <preference name="AndroidPersistentFileLocation" value="Compatibility"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
