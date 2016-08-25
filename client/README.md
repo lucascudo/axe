@@ -13,6 +13,6 @@ ionic build android --release
 ```sh
 cd platforms/android/build/outputs/apk/
 ```sh
-jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore path/to/keystore.file android-release-unsigned.apk sisau_android
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore path/to/keystore.file android-release-unsigned.apk keystore_identifier
 ```sh
 /opt/android-sdk/build-tools/23.0.3/zipalign -v 4 android-release-unsigned.apk axe.apk
