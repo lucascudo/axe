@@ -3,7 +3,7 @@ Install
 $ npm install && bower install --force
 ```
 
-Run
+Run as web application
 ```sh
 $ ionic serve -a
 ```
