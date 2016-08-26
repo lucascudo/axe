@@ -21,21 +21,20 @@ angular.module('starter.controllers', [])
 })
 
 .controller('MessageCtrl', function MessageCtrl($rootScope, $scope, $state, MessageFactory, MediaSrv) {
-	function onMediaSuccess(media) { $scope.message.media = media; }
-	function onMediaError(err) { console.log(err); }
-	function onMediaStop() {
-		document.getElementById("btn-pause").classList.add("hide");
-		document.getElementById("btn-play").classList.remove("hide");
-	}
-	function refreshPage() {
-		$scope.message = MessageFactory.sort(function () {
+	$scope.refreshPage = function refreshPage() {
+		function onMediaError(err) { console.log(err); }
+		function onMediaSuccess(media) { $scope.message.media = media; }
+		function onMediaStop() {
+			document.getElementById("btn-pause").classList.add("hide");
+			document.getElementById("btn-play").classList.remove("hide");
+		}
+		$scope.message = MessageFactory.sort(function randomize() {
 			return (Math.round(Math.random())-0.5);
 		}).pop();
-	}
-	refreshPage();
-	$scope.refreshPage = refreshPage;
+		MediaSrv.loadMedia('audio/mae/' + $scope.message.filename, null, null, onMediaStop).then(onMediaSuccess, onMediaError);
+	};
+	$scope.refreshPage();
 	$rootScope.themeColor = "energized";
-	MediaSrv.loadMedia('audio/mae/' + $scope.message.filename, null, null, onMediaStop).then(onMediaSuccess, onMediaError);
 })
 
 .controller('AboutCtrl', function AboutCtrl($rootScope) {
