@@ -49,7 +49,10 @@
 /*
  * Message
  */
-#message-body {
+ion-view, ion-view p {
+  font-size: 1.5em;
+}
+#message-body{
 	background-color: #ADE1F9;
 }
 #message-body img {

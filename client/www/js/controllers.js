@@ -37,6 +37,18 @@ angular.module('starter.controllers', [])
 	$rootScope.themeColor = "energized";
 })
 
-.controller('AboutCtrl', function AboutCtrl($rootScope) {
+.controller('AboutCtrl', function AboutCtrl($rootScope, $scope) {
 	$rootScope.themeColor = "balanced";
+	$scope.authors = [
+		{ name: "Mãe Stella de Oxóssi (Maria Stella de Azevedo Santos)", role: "Produção de conteúdo" },
+		{ name: "Graziela Domini", role: "Produção de conteúdo" },
+		{ name: "Cascudo (Lucas Teixeira Rocha)", role: "Desenvolvimento de software" },
+		{ name: "Antônio Ladeia", role: "Desenvolvimento de software" },
+		{ name: "Rose Vermelho", role: "Design gráfico" }
+	];
+	$scope.greetings = [
+		"Nelson Pretto",
+		"Kah Menezes",
+		"--> INSERIR NOME DO RAPAZ QUE AJUDOU ROSE COM GRAVAÇÃO E TRANSMISSÃO DOS AUDIOS AQUI <--"
+	];
 });
