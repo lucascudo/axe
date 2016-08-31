@@ -47,8 +47,9 @@ angular.module('starter.controllers', [])
 		{ name: "Rose Vermelho", role: "Design gráfico" }
 	];
 	$scope.greetings = [
+		"Marcio --> (INSERIR SOBRENOME DO RAPAZ QUE AJUDOU ROSE COM GRAVAÇÃO E TRANSMISSÃO DOS AUDIOS AQUI <--",
 		"Nelson Pretto",
 		"Kah Menezes",
-		"--> INSERIR NOME DO RAPAZ QUE AJUDOU ROSE COM GRAVAÇÃO E TRANSMISSÃO DOS AUDIOS AQUI <--"
+		"Renata Aline Silva Rocha"
 	];
 });

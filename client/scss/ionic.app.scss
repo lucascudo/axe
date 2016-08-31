@@ -14,8 +14,23 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+
 $positive:                        #87CEEB !default; //SkyBlue
 $assetive: linear-gradient(to right-bottom, black 0%,black 50%,#000000 50%,red 50%,red 100%) !default;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+
+/** Global */
+
+blockquote {
+	font-style: italic;
+	border-color: $positive;
+}
 
 .accessible {
 	font-weight: bold !important;
@@ -26,9 +41,68 @@ $assetive: linear-gradient(to right-bottom, black 0%,black 50%,#000000 50%,red 5
 	&:hover { border-style: inset; }
 }
 
-// The path for our ionicons font files, relative to the built CSS in www/css
-$ionicons-font-path: "../lib/ionic/fonts" !default;
+/*
+ * Home
+ */
+ .home-button {
+ 	background-color: #005696;
+ 	color: white;
+ 	font-weight: bold;
+ }
 
-// Include all of Ionic
-@import "www/lib/ionic/scss/ionic";
+/*
+ * Dictionary
+ */
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
 
+/*
+ * Message
+ */
+#message-body{
+	background-color: #ADE1F9;
+}
+#message-body img {
+	border-bottom: 2em solid #015E99;
+	width: 100%;
+    height: auto;
+}
+.hide {
+	display: none !important;
+}
+.rounded-button {
+	display: block;
+	margin: auto;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color: #f5f5f5;
+    text-align: center;
+    background: #005696;
+    font-weight: bold;
+    line-height: 50px;
+    box-shadow: 0 0 3px gray;
+}
+.rounded-button:hover {
+    opacity: 0.80;
+}
+.my-player {
+    width: 92px;
+    height: 92px;
+    font-size: 88px;
+}
+.btn-refresh {
+    width: 69px;
+    height: 69px;
+    font-size: 66px;
+}
