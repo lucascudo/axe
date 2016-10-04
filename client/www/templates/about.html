@@ -1,19 +1,19 @@
 <ion-view title="Sobre">
 	<ion-content id="about-body">
 		<!-- <img src="img/cotidiano_fundo.jpg">-->
-	    <div class="item-text-wrap"><blockquote>
+	    <div class="item-text-wrap">
 			<p>Entendendo que o Candomblé é uma religião essencialmente oral, percebemos a necessidade de documentá-la, bem como facilitar a sua difusão entre os mais jovens.</p>
 			<br>
-			<p>Quem somos:</p>
+			<p>Desenvolvedores:</p>
 			<ion-list>			
-				<ion-item class="icon ion-person" ng-repeat="author in authors">{{ author.name }} - {{ author.role }}</ion-item>
+				<ion-item class="icon ion-person" ng-repeat="author in about.authors"> {{ author.name }} - {{ author.role }}</ion-item>
 			</ion-list>
 			<br>
 			<br>
 			<p>Agradecimentos especiais:</p>
 			<ion-list>			
-				<ion-item class="icon ion-person" ng-repeat="name in greetings">{{ name }}</ion-item>
+				<ion-item class="icon ion-person" ng-repeat="name in about.greetings"> {{ name }}</ion-item>
 			</ion-list>
-		</blockquote></div>
+		</div>
   </ion-content>
   </ion-view>

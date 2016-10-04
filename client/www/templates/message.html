@@ -1,17 +1,20 @@
 <ion-view title="Orientações de Mãe Stella" cache-view="false">
 	<ion-content id="message-body">
-		<img src="img/orientacoes_fundo.jpg">
 	    <div class="item-text-wrap">
-			<a ng-click="refreshPage()" id="btn-refresh" class="btn-refresh rounded-button">
-				<i class="ion-loop"></i>
-			</a>
-      		<a ng-click="message.media.play()" id="btn-play" class="my-player rounded-button" my-player>
-				<i class="ion-android-volume-up"></i>
-			</a>
-			<a ng-click="message.media.pause()" id="btn-pause" class="my-player rounded-button hide" my-player>
-				<i class="ion-android-volume-off"></i>
-			</a>
-			<blockquote>"{{ message.description }}"</blockquote>
+	    	<br>
+	    	<div style="text-align: center;">
+				<a ng-click="message.media.play()" id="btn-play" class="my-player rounded-button" my-player>
+					<i class="ion-android-volume-up"></i>
+				</a>
+				<a ng-click="message.media.pause()" id="btn-pause" class="my-player rounded-button hide" my-player>
+					<i class="ion-android-volume-off"></i>
+				</a>
+				<a ng-click="refreshPage()" class="btn-refresh rounded-button" style="">
+					<i class="ion-skip-forward"></i>
+				</a>
+			</div>
+			<br>
+			<p>{{ message.description }}</p>
 	    </div>
 	</ion-content>
 </ion-view>

@@ -1,6 +1,5 @@
 <ion-view title="O saber Yorubá no corpo">
   <ion-content id="message-body">
-    <img src="img/dictionary_fundo.jpg">
   	<ion-list>
       <div ng-repeat="word in dictionary">
         <ion-item class="item item-text-wrap"
@@ -14,7 +13,7 @@
         <ion-item class="item-text-wrap item-accordion"
         	ng-repeat="description in word.description"
         	ng-show="isGroupShown(word)">
-        	{{description}}
+        	<p>{{description}}</p>
         </ion-item>
       </div>
     </ion-list>

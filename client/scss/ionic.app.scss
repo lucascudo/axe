@@ -15,7 +15,7 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
-$positive:                        #87CEEB !default; //SkyBlue
+$positive:                        #005696 !default;
 $assetive: linear-gradient(to right-bottom, black 0%,black 50%,#000000 50%,red 50%,red 100%) !default;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
@@ -45,7 +45,7 @@ blockquote {
  * Home
  */
  .home-button {
- 	background-color: #005696;
+ 	background-color: $positive;
  	color: white;
  	font-weight: bold;
  }
@@ -70,39 +70,32 @@ blockquote {
 /*
  * Message
  */
-#message-body{
-	background-color: #ADE1F9;
-}
-#message-body img {
-	border-bottom: 2em solid #015E99;
-	width: 100%;
-    height: auto;
-}
 .hide {
 	display: none !important;
 }
 .rounded-button {
-	display: block;
+  vertical-align: middle;
+	display: inline-block;
 	margin: auto;
-    border: 2px solid #f5f5f5;
-    border-radius: 50%;
-    color: #f5f5f5;
-    text-align: center;
-    background: #005696;
-    font-weight: bold;
-    line-height: 50px;
-    box-shadow: 0 0 3px gray;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  color: #f5f5f5;
+  text-align: center;
+  background: #005696;
+  font-weight: bold;
+  line-height: 50px;
+  box-shadow: 0 0 3px gray;  
 }
 .rounded-button:hover {
-    opacity: 0.80;
+  opacity: 0.80;
 }
 .my-player {
-    width: 92px;
-    height: 92px;
-    font-size: 88px;
+  width: 92px;
+  height: 92px;
+  font-size: 88px;
 }
 .btn-refresh {
-    width: 69px;
-    height: 69px;
-    font-size: 66px;
+  width: 69px;
+  height: 69px;
+  font-size: 66px;
 }

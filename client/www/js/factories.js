@@ -1,5 +1,24 @@
 angular.module("starter.factories", [])
 
+.factory("AboutFactory", function () {
+  return {
+    authors: [
+      { name: "Mãe Stella de Oxóssi (Maria Stella de Azevedo Santos)", role: "Produção de conteúdo" },
+      { name: "Graziela Domini", role: "Produção de conteúdo" },
+      { name: "Cascudo (Lucas Teixeira Rocha)", role: "Desenvolvimento de software" },
+      { name: "Antônio Ladeia", role: "Desenvolvimento de software" },
+      { name: "Rose Vermelho", role: "Design gráfico" }
+    ],
+    greetings: [
+      "Marcus Quintela",
+      "Marcio de Jagun",
+      "Nelson Pretto",
+      "Kah Menezes",
+      "Renata Aline Silva Rocha"
+    ]
+  };
+})
+
 .factory("DictionaryFactory", function () {
   return [
 		{
@@ -34,7 +53,7 @@ angular.module("starter.factories", [])
 .factory('MessageFactory', function () {
   return [
     { filename: 'a confianca e o adubo.mp3', description: 'A confiança é o adubo do amor.' },
-    { filename: 'a humanidade ja paecebeu.mp3', description: 'A humanidade já percebeu a necessidade de purificar o corpo, precisa aprender a purificar a mente e o coração.' },
+    { filename: 'a humanidade ja parcebeu.mp3', description: 'A humanidade já percebeu a necessidade de purificar o corpo, precisa aprender a purificar a mente e o coração.' },
     { filename: 'a ilusao e como bolha de sabao.mp3', description: 'A ilusão é como bolha de sabão que se desfaz facilmente.' },
     { filename: 'a maior felicidade de toda mae.mp3', description: 'A maior felicidade de toda mãe é saber que o fruto do seu ventre é feliz e está transmitindo essa felicidade para a humanidade.' },
     { filename: 'a maior surpresa da vida.mp3', description: 'A maior surpresa da vida é tomar conciência que o mal existe.' },

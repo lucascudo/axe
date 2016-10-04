@@ -1,11 +1,8 @@
 angular.module('starter.controllers', [])
 
-.controller('HomeCtrl', function HomeCtrl($rootScope) {
-	$rootScope.themeColor = "positive";
-})
+.controller('HomeCtrl', function HomeCtrl() {})
 
-.controller('DictionaryCtrl', function DictionaryCtrl($rootScope, $scope, ionicMaterialMotion, DictionaryFactory) {
-	$rootScope.themeColor = "assertive";
+.controller('DictionaryCtrl', function DictionaryCtrl($scope, ionicMaterialMotion, DictionaryFactory) {
 	$scope.dictionary = DictionaryFactory;
 	ionicMaterialMotion.ripple();
 	$scope.toggleGroup = function toggleGroup(group) {
@@ -20,7 +17,7 @@ angular.module('starter.controllers', [])
 	};
 })
 
-.controller('MessageCtrl', function MessageCtrl($rootScope, $scope, $state, MessageFactory, MediaSrv) {
+.controller('MessageCtrl', function MessageCtrl($scope, $state, MessageFactory, MediaSrv) {
 	$scope.refreshPage = function refreshPage() {
 		function onMediaError(err) { console.log(err); }
 		function onMediaSuccess(media) { $scope.message.media = media; }
@@ -28,28 +25,15 @@ angular.module('starter.controllers', [])
 			document.getElementById("btn-pause").classList.add("hide");
 			document.getElementById("btn-play").classList.remove("hide");
 		}
-		$scope.message = MessageFactory.sort(function randomize() {
+		var mfCopy = MessageFactory.slice();
+    	$scope.message = mfCopy.sort(function randomize() {
 			return (Math.round(Math.random())-0.5);
 		}).pop();
 		MediaSrv.loadMedia('audio/mae/' + $scope.message.filename, null, null, onMediaStop).then(onMediaSuccess, onMediaError);
 	};
 	$scope.refreshPage();
-	$rootScope.themeColor = "energized";
 })
 
-.controller('AboutCtrl', function AboutCtrl($rootScope, $scope) {
-	$rootScope.themeColor = "balanced";
-	$scope.authors = [
-		{ name: "Mãe Stella de Oxóssi (Maria Stella de Azevedo Santos)", role: "Produção de conteúdo" },
-		{ name: "Graziela Domini", role: "Produção de conteúdo" },
-		{ name: "Cascudo (Lucas Teixeira Rocha)", role: "Desenvolvimento de software" },
-		{ name: "Antônio Ladeia", role: "Desenvolvimento de software" },
-		{ name: "Rose Vermelho", role: "Design gráfico" }
-	];
-	$scope.greetings = [
-		"Marcio --> (INSERIR SOBRENOME DO RAPAZ QUE AJUDOU ROSE COM GRAVAÇÃO E TRANSMISSÃO DOS AUDIOS AQUI <--",
-		"Nelson Pretto",
-		"Kah Menezes",
-		"Renata Aline Silva Rocha"
-	];
+.controller('AboutCtrl', function AboutCtrl($scope, AboutFactory) {
+	$scope.about = AboutFactory;
 });
