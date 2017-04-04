@@ -15,7 +15,9 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
-$positive:                        #005696 !default;
+$positive:                        #87CEEB !default; //SkyBlue
+//$positive: #005696 !default;
+
 $assetive: linear-gradient(to right-bottom, black 0%,black 50%,#000000 50%,red 50%,red 100%) !default;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
@@ -26,7 +28,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 
 /** Global */
-
+ion-content, .item {
+ background-color: #ADE1F9;
+}
 blockquote {
 	font-style: italic;
 	border-color: $positive;
@@ -45,7 +49,7 @@ blockquote {
  * Home
  */
  .home-button {
- 	background-color: $positive;
+ 	background-color: #005696;
  	color: white;
  	font-weight: bold;
  }
@@ -98,4 +102,9 @@ blockquote {
   width: 69px;
   height: 69px;
   font-size: 66px;
+}
+#message-body img {
+ border-bottom: 2em solid #015E99;
+ width: 100%;
+    height: auto;
 }

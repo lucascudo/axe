@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="br.com.sisau.axe" version="16.10.06" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="br.com.sisau.axe" version="17.04.04" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Orientações de Mãe Stella</name>
   <description>
-        Repositório de cultura Yorubá/Nagô.
+        Repositório de cultura Yorubá/Nagô através das frases de Mãe Stella de Oxóssi.
   </description>
-  <author email="lucas.sisau@gmail.com" href="https://github.com/lucascudo/">
-      Lucas Teixeira Rocha (Cascudo)
+  <author email="lucas.sisau@gmail.com" href="https://lucascudo.com.br/">
+      Lucas Teixeira Rocha
   </author>
   <author email="contato@antonioladeia.com" href="http://www.antonioladeia.com/">
       Antonio Ladeia
@@ -19,7 +19,7 @@
   <preference name="android-minSdkVersion" value="16"/>
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
-  <preference name="SplashScreenDelay" value="5000"/>
+  <preference name="SplashScreenDelay" value="4000"/>
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>

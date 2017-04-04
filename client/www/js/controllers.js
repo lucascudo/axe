@@ -1,10 +1,12 @@
 angular.module('starter.controllers', [])
 
-.controller('HomeCtrl', function HomeCtrl() {})
+.controller('HomeCtrl', function HomeCtrl($rootScope) {
+	$rootScope.themeColor = "positive";
+})
 
-.controller('DictionaryCtrl', function DictionaryCtrl($scope, ionicMaterialMotion, DictionaryFactory) {
+.controller('DictionaryCtrl', function DictionaryCtrl($rootScope, $scope, ionicMaterialMotion, DictionaryFactory) {
+	$rootScope.themeColor = "assertive";
 	$scope.dictionary = DictionaryFactory;
-	ionicMaterialMotion.ripple();
 	$scope.toggleGroup = function toggleGroup(group) {
 		if ($scope.isGroupShown(group)) {
 		  $scope.shownGroup = null;
@@ -15,9 +17,11 @@ angular.module('starter.controllers', [])
 	$scope.isGroupShown = function isGroupShown(group) {
 		return $scope.shownGroup === group;
 	};
+	ionicMaterialMotion.ripple();
 })
 
-.controller('MessageCtrl', function MessageCtrl($scope, $state, MessageFactory, MediaSrv) {
+.controller('MessageCtrl', function MessageCtrl($rootScope, $scope, $state, ionicMaterialMotion, MessageFactory, MediaSrv) {
+	$rootScope.themeColor = "energized";
 	$scope.refreshPage = function refreshPage() {
 		function onMediaError(err) { console.log(err); }
 		function onMediaSuccess(media) { $scope.message.media = media; }
@@ -32,8 +36,11 @@ angular.module('starter.controllers', [])
 		MediaSrv.loadMedia('audio/mae/' + $scope.message.filename, null, null, onMediaStop).then(onMediaSuccess, onMediaError);
 	};
 	$scope.refreshPage();
+	ionicMaterialMotion.ripple();
 })
 
-.controller('AboutCtrl', function AboutCtrl($scope, AboutFactory) {
+.controller('AboutCtrl', function AboutCtrl($rootScope, $scope, ionicMaterialMotion, AboutFactory) {
+	$rootScope.themeColor = "balanced";
 	$scope.about = AboutFactory;
+	ionicMaterialMotion.ripple();
 });
