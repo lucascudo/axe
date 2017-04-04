@@ -1,7 +1,8 @@
 {
-  "name": "axe",
-  "version": "16.09.03",
-  "description": "Repositório de cultura nagô.",
+
+  "name": "Orientações de Mãe Stella",
+  "version": "17.04.04",
+  "description": "Repositório de cultura Yorubá/Nagô através das frases de Mãe Stella de Oxóssi.",
   "repository": "https://github.com/lucascudo/axe.git",
   "license": "Apache-2.0",
   "dependencies": {
