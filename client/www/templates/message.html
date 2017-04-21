@@ -1,21 +1,17 @@
 <ion-view title="Orientações de Mãe Stella" cache-view="false">
 	<ion-content id="message-body">
-		<img src="img/orientacoes_fundo.jpg">
+		<img src="img/{{ picture }}">
 	    <div class="item-text-wrap">
-	    	<br>
-	    	<div style="text-align: center;">
-				<a ng-click="message.media.play()" id="btn-play" class="my-player rounded-button" my-player>
-					<i class="ion-play"></i>
-				</a>
-				<a ng-click="message.media.pause()" id="btn-pause" class="my-player rounded-button hide" my-player>
-					<i class="ion-pause"></i>
-				</a>
-				<a ng-click="refreshPage()" class="btn-refresh rounded-button" style="">
-					<i class="ion-skip-forward"></i>
-				</a>
-			</div>
-			<br>
-			<p>{{ message.description }}</p>
-	    </div>
+			<p style="margin: 10px;">{{ message.description }}</p>
+    	</div>
+    	<div style="text-align: center;">
+			<button ng-click="message.media.play()" id="btn-play" class="my-player rounded-button button-icon ion-play" alt="Play" my-player/>
+			<button ng-click="message.media.pause()" id="btn-pause" class="my-player rounded-button button-icon ion-pause hide" alt="Pause" my-player/>
+			<button ng-click="refreshPage()" class="btn-refresh rounded-button button-icon ion-skip-forward"/>
+		</div>
+		<br>
+    	<div style="text-align: right; vertical-align: bottom;">
+			<button ui-sref="about" class="btn-info rounded-button button-icon ion-ios-information-outline" alt="Sobre"/>
+		</div>
 	</ion-content>
 </ion-view>

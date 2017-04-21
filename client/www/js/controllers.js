@@ -33,6 +33,13 @@ angular.module('starter.controllers', [])
     	$scope.message = mfCopy.sort(function randomize() {
 			return (Math.round(Math.random())-0.5);
 		}).pop();
+		$scope.picture = [
+			'orientacoes_fundo.jpg',
+			'smile_fundo.jpg',
+			'dictionary_fundo.jpg'
+		].sort(function randomize() {
+			return (Math.round(Math.random())-0.5);
+		}).pop();
 		MediaSrv.loadMedia('audio/mae/' + $scope.message.filename, null, null, onMediaStop).then(onMediaSuccess, onMediaError);
 	};
 	$scope.refreshPage();

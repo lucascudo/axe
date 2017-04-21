@@ -38,29 +38,17 @@ angular.module('starter', [
   // Each state's controller can be found in controllers.js
   $stateProvider
 	  
-  .state('home', {
-    url: '/home',
-	controller: 'HomeCtrl',
-	templateUrl: 'templates/home.html'
-  })
-  
-  .state('dictionary', {
-    url: '/dictionary',
-	controller: 'DictionaryCtrl',
-	templateUrl: 'templates/dictionary.html'
-  })
-  
-  .state('message', {
-    url: '/message',
-	cache: false,
-	controller: 'MessageCtrl',
-	templateUrl: 'templates/message.html'
-  })
-  
   .state('about', {
     url: '/about',
 	controller: 'AboutCtrl',
 	templateUrl: 'templates/about.html'
+  })
+  
+  .state('home', {
+    url: '/home',
+	cache: false,
+	controller: 'MessageCtrl',
+	templateUrl: 'templates/message.html'
   });
 
   // if none of the above states are matched, use this as the fallback
