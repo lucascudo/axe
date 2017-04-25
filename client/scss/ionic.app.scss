@@ -103,12 +103,15 @@ blockquote {
   margin-left: 3px;
   font-size: 64px;
 }
-.btn-info {
-  font-size: 48px;
-  margin: 10px;
-}
 #message-body img {
   border-bottom: 2em solid #015E99;
   width: 100%;
   height: auto;
+}
+
+/*
+* About
+*/
+#about-body {
+  padding: 6px;
 }

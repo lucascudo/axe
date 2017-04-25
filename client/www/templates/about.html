@@ -1,15 +1,19 @@
-<ion-view title="Sobre">
+<ion-view title="Sobre o aplicativo">
 	<ion-content id="about-body">
 		<!-- <img src="img/cotidiano_fundo.jpg"> -->
 	    <div class="item-text-wrap">
-			<p>Entendendo que o Candomblé é uma religião essencialmente oral, percebemos a necessidade de documentá-la, bem como facilitar a sua difusão entre os mais jovens.</p>
+			<p style="text-align: justify;">Mãe Stella de Oxóssi abre mais um importante caminho para documentar a riqueza cultural do Candomblé, uma religião essencialmente oral. A convergência de diferentes linguagens neste aplicativo permite, através de breves reflexões, que a imagem, o texto e a voz da Iyalorixá sejam lidos e ouvidos por pessoas de diferentes idades, em qualquer lugar do mundo conectado.</p>
 			<br>
 			<p>Desenvolvedores:</p>
 			<ion-list>			
-				<ion-item class="icon ion-person" ng-repeat="author in about.authors"> {{ author.name }} - {{ author.role }}</ion-item>
+				<ion-item ng-repeat="author in about.authors" class="list card">
+					<ion-avatar class="item item-avatar">
+					<img src="img/{{ author.picture }}">
+					<h2>{{ author.name }}</h2>
+					<p>{{ author.role }}</p>
+					</ion-avatar>
+				</ion-item>
 			</ion-list>
-			<br>
-			<br>
 			<p>Agradecimentos especiais:</p>
 			<ion-list>			
 				<ion-item class="icon ion-person" ng-repeat="name in about.greetings"> {{ name }}</ion-item>

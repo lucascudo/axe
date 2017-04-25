@@ -3,18 +3,18 @@ angular.module("starter.factories", [])
 .factory("AboutFactory", function () {
   return {
     authors: [
-      { name: "Mãe Stella de Oxóssi (Maria Stella de Azevedo Santos)", role: "Produção de conteúdo" },
-      { name: "Graziela Domini", role: "Produção de conteúdo" },
-      { name: "Cascudo (Lucas Teixeira Rocha)", role: "Desenvolvimento de software" },
-      { name: "Antônio Ladeia", role: "Desenvolvimento de software" },
-      { name: "Rose Vermelho", role: "Design gráfico" }
+      { name: "Maria Stella de Azevedo Santos", role: "Produção de conteúdo", picture: "foto-mae.jpg" },
+      { name: "Lucas Teixeira Rocha", role: "Desenvolvimento de software", picture: "foto-lucas.png" },
+      { name: "Antônio Ladeia", role: "Desenvolvimento de software", picture: "foto-ladeia.jpg" },
+      { name: "Rose Vermelho", role: "Design gráfico", picture: "foto-rose.jpg" },
+      { name: "Ka Menezes", role: "Produção de conteúdo", picture: "foto-ka.jpg" }
     ],
     greetings: [
+      "Graziela Domini",
       "Marcus Quintela",
       "Marcio de Jagun",
       "Nelson Pretto",
-      "Kah Menezes",
-      "Renata Aline Silva Rocha"
+      "Renata Rocha"
     ]
   };
 })
