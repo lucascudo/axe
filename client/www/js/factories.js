@@ -6,13 +6,12 @@ angular.module("starter.factories", [])
       { name: "Maria Stella de Azevedo Santos", role: "Produção de conteúdo", picture: "foto-mae.jpg" },
       { name: "Lucas Teixeira Rocha", role: "Desenvolvimento de software", picture: "foto-lucas.png" },
       { name: "Antônio Ladeia", role: "Desenvolvimento de software", picture: "foto-ladeia.jpg" },
-      { name: "Rose Vermelho", role: "Design gráfico", picture: "foto-rose.jpg" },
-      { name: "Ka Menezes", role: "Produção de conteúdo", picture: "foto-ka.jpg" }
+      { name: "Rose Vermelho", role: "Design gráfico", picture: "foto-rose.jpg" }
     ],
     greetings: [
       "Graziela Domini",
+      "Karina Menezes",
       "Marcus Quintela",
-      "Marcio de Jagun",
       "Nelson Pretto",
       "Renata Rocha"
     ]

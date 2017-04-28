@@ -42,7 +42,7 @@ angular.module('starter.controllers', [])
 		}).pop();
 		MediaSrv.loadMedia('audio/mae/' + $scope.message.filename, null, null, onMediaStop).then(onMediaSuccess, onMediaError);
 	};
-	$scope.refreshPage();
+	setTimeout($scope.refreshPage, 1000);
 	ionicMaterialMotion.ripple();
 })
 
