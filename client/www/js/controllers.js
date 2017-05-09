@@ -20,7 +20,7 @@ angular.module('starter.controllers', [])
 	ionicMaterialMotion.ripple();
 })
 
-.controller('MessageCtrl', function MessageCtrl($rootScope, $scope, $state, ionicMaterialMotion, MessageFactory, MediaSrv) {
+.controller('MessageCtrl', function MessageCtrl($rootScope, $scope, $state, $localstorage, ionicMaterialMotion, MessageFactory, MediaSrv) {
 	$rootScope.themeColor = "energized";
 	$scope.refreshPage = function refreshPage() {
 		function onMediaError(err) { console.log(err); }
@@ -29,18 +29,32 @@ angular.module('starter.controllers', [])
 			document.getElementById("btn-pause").classList.add("hide");
 			document.getElementById("btn-play").classList.remove("hide");
 		}
-		var mfCopy = MessageFactory.slice();
-    	$scope.message = mfCopy.sort(function randomize() {
-			return (Math.round(Math.random())-0.5);
-		}).pop();
-		$scope.picture = [
+
+		let mfCopy = MessageFactory.slice();
+		let blacklist = $localstorage.get('axe-message-blacklist');
+		blacklist = (blacklist) ? JSON.parse(blacklist) : new Array();
+		if (blacklist.lenght > 0) {
+			if (blacklist.lenght >= mfCopy.lenght) {
+				blacklist = new Array();
+			} else {
+				mfCopy = mfCopy.filter(function (message) {
+					return (blacklist.indexOf(message.id) == -1);
+				})
+			}
+		}
+    	$scope.picture = [
 			'orientacoes_fundo.jpg',
 			'smile_fundo.jpg',
 			'dictionary_fundo.jpg'
 		].sort(function randomize() {
 			return (Math.round(Math.random())-0.5);
 		}).pop();
+		$scope.message = mfCopy.sort(function randomize() {
+			return (Math.round(Math.random())-0.5);
+		}).pop();
 		MediaSrv.loadMedia('audio/mae/' + $scope.message.filename, null, null, onMediaStop).then(onMediaSuccess, onMediaError);
+		blacklist.push($scope.message.id);
+		$localstorage.set('axe-message-blacklist', JSON.stringify(blacklist));
 	};
 	setTimeout($scope.refreshPage, 1000);
 	ionicMaterialMotion.ripple();
