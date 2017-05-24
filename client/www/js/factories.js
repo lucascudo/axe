@@ -130,7 +130,37 @@ angular.module("starter.factories", [])
     { id: 59, filename: 'todos falam em mudanca melhor seria.mp3', description: 'Todos falam em mudança, melhor seria que falassem em ampliação.' },
     { id: 60, filename: 'todos nos podemos ser imortais cotanto.mp3', description: 'Todos nós podemos ser imortais, contanto que cumpramos com competência e alegria a função que nos foi destinada.' },
     { id: 61, filename: 'voce esta dando um tempo para o amor.mp3', description: 'Você está dando um tempo para o amor, ou está dando um tempo no amor?' },
-    { id: 62, filename: 'xire e o verbo brincar.mp3', description: 'Xirê é o verbo brincar na língua yorubá. Brincar é enfeitiçar, é encantar.' }
+    { id: 62, filename: 'xire e o verbo brincar.mp3', description: 'Xirê é o verbo brincar na língua yorubá. Brincar é enfeitiçar, é encantar.' },
+    
+    // Segunda remessa
+    { id: 63, filename: 'AUD-20170524-WA0000.m4a', description: 'Quem valoriza o que é seu não precisa estar de olho no alheio.' },
+    { id: 64, filename: 'AUD-20170524-WA0001.m4a', description: 'Quem queima etapas não faz o caminho completo.' },
+    { id: 65, filename: 'AUD-20170524-WA0002.m4a', description: 'Fingir que não conhece os próprios defeitos não faz com que desapareçam.' },
+    { id: 66, filename: 'AUD-20170524-WA0003.m4a', description: 'Quem está vinculado ao sagrado não pode mentir em seu nome.' },
+    { id: 67, filename: 'AUD-20170524-WA0004.m4a', description: 'Segredo dividido deixa de ser segredo.' },
+    { id: 68, filename: 'AUD-20170524-WA0005.m4a', description: 'Às vezes é preciso perder pouco para não perder tudo.' },
+    { id: 69, filename: 'AUD-20170524-WA0006.m4a', description: 'Se não ficar atento ao que lhe é valoroso, poderá arrepender-se.' },
+    { id: 70, filename: 'AUD-20170524-WA0007.m4a', description: 'Escolha! Na aceitação de um orientador espiritual todo cuidado é pouco.' },
+    { id: 71, filename: 'AUD-20170524-WA0008.m4a', description: 'Pouca bebida alegra a alma, muita bebida entorpece a mente.' },
+    { id: 72, filename: 'AUD-20170524-WA0009.m4a', description: 'As maledicências não tem força o suficiente para impedir uma firme caminhada.' },
+    { id: 73, filename: 'AUD-20170524-WA0010.m4a', description: 'Nem tudo que é forte é aspero.' },
+    { id: 74, filename: 'AUD-20170524-WA0011.m4a', description: 'Quem é prevenido e atento, cai menos em armadilhas.' },
+    { id: 75, filename: 'AUD-20170524-WA0012.m4a', description: 'O raiar de cada dia deve ser momento de grande alegria.' },
+    { id: 76, filename: 'AUD-20170524-WA0013.m4a', description: 'A nuvem negra que encobre a vida hoje, dará lugar ao brilho do sol amanhã.' },
+    { id: 77, filename: 'AUD-20170524-WA0014.m4a', description: 'As lágrimas lavam a alma e clareiam a mente.' },
+    { id: 78, filename: 'AUD-20170524-WA0015.m4a', description: 'O cauteloso não deixa de errar, mas erra muito menos.' },
+    { id: 79, filename: 'AUD-20170524-WA0016.m4a', description: 'O excesso gera desequilíbrio.' },
+    { id: 80, filename: 'AUD-20170524-WA0017.m4a', description: 'Plante, regue, espere e colha!' },
+    { id: 81, filename: 'AUD-20170524-WA0018.m4a', description: 'Quem bate esquece logo, quem apanha lembra sempre.' },
+    { id: 82, filename: 'AUD-20170524-WA0019.m4a', description: 'Quem muito anda conhece muitos lugares, mas não chega a lugar nenhum.' },
+    { id: 83, filename: 'AUD-20170524-WA0020.m4a', description: 'Quem desdenha dos defeitos alheios está exibindo os seus.' },
+    { id: 84, filename: 'AUD-20170524-WA0021.m4a', description: 'Teimosia e rebeldia não geram alegria.' },
+    { id: 85, filename: 'AUD-20170524-WA0022.m4a', description: 'Um fraco forte derruba um forte fraco.' },
+    { id: 86, filename: 'AUD-20170524-WA0023.m4a', description: 'O mal agradecido é atroz.' },
+    { id: 87, filename: 'AUD-20170524-WA0024.m4a', description: 'O que o destino disser que é, não há quem tenha força pra dizer que não é.' },
+    { id: 88, filename: 'AUD-20170524-WA0025.m4a', description: 'Não podemos antecipar os acontecimentos, então por que nos preocuparmos com estes?' },
+    { id: 89, filename: 'AUD-20170524-WA0026.m4a', description: 'Muito cuidado com o que entra pela boca e mais ainda com o que sai!' },
+    { id: 90, filename: 'AUD-20170524-WA0027.m4a', description: 'Cuidado com o que fala para a vítima não ser você!' }
   ];
 })
 
