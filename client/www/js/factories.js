@@ -70,7 +70,7 @@ angular.module("starter.factories", [])
 .factory('MessageFactory', function () {
   return messages = [
     { id: 1, filename: 'a confianca e o adubo.mp3', description: 'A confiança é o adubo do amor.' },
-    { id: 2, filename: 'a humanidade ja parcebeu.mp3', description: 'A humanidade já percebeu a necessidade de purificar o corpo, precisa aprender a purificar a mente e o coração.' },
+    { id: 2, filename: 'a humanidade ja percebeu.mp3', description: 'A humanidade já percebeu a necessidade de purificar o corpo, precisa aprender a purificar a mente e o coração.' },
     { id: 3, filename: 'a ilusao e como bolha de sabao.mp3', description: 'A ilusão é como bolha de sabão que se desfaz facilmente.' },
     { id: 4, filename: 'a maior felicidade de toda mae.mp3', description: 'A maior felicidade de toda mãe é saber que o fruto do seu ventre é feliz e está transmitindo essa felicidade para a humanidade.' },
     { id: 5, filename: 'a maior surpresa da vida.mp3', description: 'A maior surpresa da vida é tomar consciência que o mal existe.' },
@@ -91,7 +91,7 @@ angular.module("starter.factories", [])
     { id: 20, filename: 'e a falta de fraternidade que causa a pobresa.mp3', description: 'É a falta de fraternidade que produz a pobreza no mundo.' },
     { id: 21, filename: 'e bom cuidar para que um dialogo proposto.mp3', description: 'É bom cuidar para que um diálogo proposto não se transforme em um monólogo imposto.' },
     { id: 22, filename: 'em nada adianta a indignacao.mp3', description: 'Em nada adianta a indignação sem ação.' },
-    { id: 23, filename: 'em um podio.mp3', description: 'Em um pódio só cabem três pessoas e a maioria recebem o prêmio de aplaudir os vencedores.' },
+    { id: 23, filename: 'em um podio.mp3', description: 'Em um pódio só cabem três pessoas e a maioria recebe o prêmio de aplaudir os vencedores.' },
     { id: 24, filename: 'encontrar o amor verdadeiro.mp3', description: 'Encontrar o amor verdadeiro é a maior de todas as riquezas.' },
     { id: 25, filename: 'livre e quem respeita.mp3', description: 'Livre é quem respeita seus próprios limites e os dos seus irmãos.' },
     { id: 26, filename: 'nao e bom chorar muito.mp3', description: 'Não é bom chorar muito, não é bom sorrir muito, tudo em excesso traz perda de energia.' },
