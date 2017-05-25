@@ -20,7 +20,7 @@ angular.module('starter.controllers', [ 'ngCordova' ])
 	ionicMaterialMotion.ripple();
 })
 
-.controller('MessageCtrl', function MessageCtrl($rootScope, $scope, $state, $localstorage, $cordovaSocialSharing, ionicMaterialMotion, MessageFactory, MediaSrv) {
+.controller('MessageCtrl', function MessageCtrl($rootScope, $scope, $state, localStorage, $cordovaSocialSharing, ionicMaterialMotion, MessageFactory, MediaSrv) {
 	$rootScope.themeColor = "energized";
 	$scope.share = function () {
 		$cordovaSocialSharing.share('"' + $scope.message.description + '"');
@@ -34,7 +34,7 @@ angular.module('starter.controllers', [ 'ngCordova' ])
 		}
 
 		let mfCopy = MessageFactory.slice();
-		let blacklist = $localstorage.get('axe-message-blacklist');
+		let blacklist = localStorage.get('axe-message-blacklist');
 		blacklist = (blacklist) ? JSON.parse(blacklist) : new Array();
 		if (blacklist.lenght > 0) {
 			if (blacklist.lenght >= mfCopy.lenght) {
@@ -57,7 +57,7 @@ angular.module('starter.controllers', [ 'ngCordova' ])
 		}).pop();
 		MediaSrv.loadMedia('audio/mae/' + $scope.message.filename, null, null, onMediaStop).then(onMediaSuccess, onMediaError);
 		blacklist.push($scope.message.id);
-		$localstorage.set('axe-message-blacklist', JSON.stringify(blacklist));
+		localStorage.set('axe-message-blacklist', JSON.stringify(blacklist));
 	};
 	setTimeout($scope.refreshPage, 1000);
 	ionicMaterialMotion.ripple();

@@ -8,7 +8,8 @@
     "ionic": "~1.0.0",
     "waves": "0.6",
     "ionic-material": "~0.4.2",
-    "ngCordova": "^0.1.27-alpha"
+    "ngCordova": "^0.1.27-alpha",
+    "ngstorage": "^0.3.11"
   },
   "resolutions": {
     "angular-animate": "1.4.3",

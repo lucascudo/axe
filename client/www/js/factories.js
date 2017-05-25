@@ -1,18 +1,21 @@
-angular.module("starter.factories", [])
+angular.module("starter.factories", [ 'ngStorage' ])
 
-.factory('$localstorage', ['$window', function($window) {
+.factory('localStorage', ['$localStorage', function($localStorage) {
+  $localStorage = $localStorage.$default({
+    'axe-message-blacklist': '[]'
+  });
   return {
     set: function(key, value) {
-      $window.localStorage[key] = value;
+      $localStorage[key] = value;
     },
     get: function(key, defaultValue) {
-      return $window.localStorage[key] || defaultValue;
+      return $localStorage[key] || defaultValue;
     },
     setObject: function(key, value) {
-      $window.localStorage[key] = JSON.stringify(value);
+      $localStorage[key] = JSON.stringify(value);
     },
     getObject: function(key) {
-      return JSON.parse($window.localStorage[key] || '{}');
+      return JSON.parse($localStorage[key] || '{}');
     }
   }
 }])
