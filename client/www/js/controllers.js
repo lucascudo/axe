@@ -23,7 +23,7 @@ angular.module('starter.controllers', [ 'ngCordova' ])
 .controller('MessageCtrl', function MessageCtrl($rootScope, $scope, $state, $localstorage, $cordovaSocialSharing, ionicMaterialMotion, MessageFactory, MediaSrv) {
 	$rootScope.themeColor = "energized";
 	$scope.share = function () {
-		$cordovaSocialSharing.share('"' + $scope.message.id + '"');
+		$cordovaSocialSharing.share('"' + $scope.message.description + '"');
 	};
 	$scope.refreshPage = function () {
 		function onMediaError(err) { console.log(err); }
