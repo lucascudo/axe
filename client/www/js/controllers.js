@@ -4,7 +4,8 @@ angular.module('starter.controllers', [ 'ngCordova' ])
 	$rootScope.themeColor = "positive";
 })
 
-.controller('DictionaryCtrl', function DictionaryCtrl($rootScope, $scope, ionicMaterialMotion, DictionaryFactory) {
+.controller('DictionaryCtrl', function DictionaryCtrl($rootScope, $scope, ionicMaterialMotion, ionicMaterialInk, DictionaryFactory) {
+	ionicMaterialInk.displayEffect();
 	$rootScope.themeColor = "assertive";
 	$scope.dictionary = DictionaryFactory;
 	$scope.toggleGroup = function toggleGroup(group) {
@@ -18,9 +19,11 @@ angular.module('starter.controllers', [ 'ngCordova' ])
 		return $scope.shownGroup === group;
 	};
 	ionicMaterialMotion.ripple();
+	ionicMaterialInk.displayEffect();
 })
 
-.controller('MessageCtrl', function MessageCtrl($rootScope, $scope, $state, localStorage, $cordovaSocialSharing, ionicMaterialMotion, MessageFactory, MediaSrv) {
+.controller('MessageCtrl', function MessageCtrl($rootScope, $scope, $state, localStorage, $cordovaSocialSharing, ionicMaterialMotion, ionicMaterialInk, MessageFactory, MediaSrv) {
+	ionicMaterialInk.displayEffect();
 	$rootScope.themeColor = "energized";
 	$scope.share = function () {
 		$cordovaSocialSharing.share('"' + $scope.message.description + '"');
@@ -61,10 +64,13 @@ angular.module('starter.controllers', [ 'ngCordova' ])
 	};
 	setTimeout($scope.refreshPage, 1000);
 	ionicMaterialMotion.ripple();
+	ionicMaterialInk.displayEffect();
 })
 
-.controller('AboutCtrl', function AboutCtrl($rootScope, $scope, ionicMaterialMotion, AboutFactory) {
+.controller('AboutCtrl', function AboutCtrl($rootScope, $scope, ionicMaterialMotion, ionicMaterialInk, AboutFactory) {
+	ionicMaterialInk.displayEffect();
 	$rootScope.themeColor = "balanced";
 	$scope.about = AboutFactory;
 	ionicMaterialMotion.ripple();
+	ionicMaterialInk.displayEffect();
 });
