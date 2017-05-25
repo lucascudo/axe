@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', [ 'ngCordova' ])
 
 .controller('HomeCtrl', function HomeCtrl($rootScope) {
 	$rootScope.themeColor = "positive";
@@ -20,9 +20,12 @@ angular.module('starter.controllers', [])
 	ionicMaterialMotion.ripple();
 })
 
-.controller('MessageCtrl', function MessageCtrl($rootScope, $scope, $state, $localstorage, ionicMaterialMotion, MessageFactory, MediaSrv) {
+.controller('MessageCtrl', function MessageCtrl($rootScope, $scope, $state, $localstorage, $cordovaSocialSharing, ionicMaterialMotion, MessageFactory, MediaSrv) {
 	$rootScope.themeColor = "energized";
-	$scope.refreshPage = function refreshPage() {
+	$scope.share = function () {
+		$cordovaSocialSharing.share('"' + $scope.message.id + '"');
+	};
+	$scope.refreshPage = function () {
 		function onMediaError(err) { console.log(err); }
 		function onMediaSuccess(media) { $scope.message.media = media; }
 		function onMediaStop() {

@@ -7,7 +7,8 @@
   "dependencies": {
     "ionic": "~1.0.0",
     "waves": "0.6",
-    "ionic-material": "~0.4.2"
+    "ionic-material": "~0.4.2",
+    "ngCordova": "^0.1.27-alpha"
   },
   "resolutions": {
     "angular-animate": "1.4.3",
